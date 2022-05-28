@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Подсчет гласных</title>
+</head>
+
+<body>
+    <script>
+        'use strict'
+
+        let wordUser = prompt('Введите слово на русском языке');
+        function vowelWordUser(wordUser) {
+            var vowel_list = 'аиоуеёэюяыАИОУЕЁЮЯ';
+            var vcount = 0;
+
+            for (var x = 0; x < wordUser.length; x++) {
+                if (vowel_list.indexOf(wordUser[x]) !== -1) {
+                    vcount += 1;
+                }
+            }
+            return vcount;
+        };
+        console.log(vowelWordUser(wordUser));
+
+    </script>
+</body>
+
+</html>
